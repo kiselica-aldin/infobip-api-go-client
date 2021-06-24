@@ -39,7 +39,7 @@ var (
 	xmlCheck  = regexp.MustCompile(`(?i:(?:application|text)/xml)`)
 )
 
-// APIClient manages communication with the Infobip Client API Libraries OpenAPI Specification API v1.0.12159
+// APIClient manages communication with the Infobip Client API Libraries OpenAPI Specification API v1.0.12160
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	cfg    *Configuration

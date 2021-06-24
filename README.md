@@ -31,12 +31,12 @@ Minimum Go version supported by this library is 1.13.
 ## Installation
 If you are using modules for handling dependencies include the following line in your  `go.mod` in `require` list:
 ```
-github.com/infobip/infobip-api-go-client
+github.com/infobip/infobip-api-go-client/v2
 ``` 
 
 In case you want to pull the library manually, in your terminal use the following command:
 ```
-go get github.com/infobip/infobip-api-go-client
+go get github.com/infobip/infobip-api-go-client/v2
 ```
 
 If you want to use our library by simply reusing the examples below, then import it in the file you are coding as following:
@@ -158,7 +158,7 @@ Additionally, from the successful response (`SmsResponse` object) you can pull o
 Bulk ID will be received only when you send a message to more than one destination address or multiple messages in a single request.
 
 ```go
-    bulkId := *apiResponse.BulkId;
+    bulkId := *apiResponse.BulkId
     messageId := *apiResponse.Messages[0].MessageId
 ```
 
@@ -188,7 +188,7 @@ If you are for any reason unable to receive real time delivery reports on your e
 Each request will return a batch of delivery reports - only once.
 
 ```go
-    limit := 10;
+    limit := int32(10)
     bulkId := "bulk-1234"
     messageId := "msg-123"
 
