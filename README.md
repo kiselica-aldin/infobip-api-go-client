@@ -31,12 +31,12 @@ Minimum Go version supported by this library is 1.13.
 ## Installation
 Pull the library by using the following command:
 ```shell
-go get github.com/infobip/infobip-api-go-client/v2
+go get github.com/ivan-letenko/infobip-api-go-client/v2
 ```
 
 To use our library you have to import it in your project files:
 ```shell
-import "github.com/infobip/infobip-api-go-client/v2"
+import "github.com/ivan-letenko/infobip-api-go-client/v2"
 ```
 
 Afterwards, to update your `go.mod` and `go.sum` files, simply run the following:
